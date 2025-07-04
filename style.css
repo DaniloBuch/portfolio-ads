@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0a0a0a;
+  color: #e2e8f0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+}
+
+.cabecalho {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #64748b;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+}
+
+.apresentacao {
+  display: flex;
+  text-align: left;
+  gap: 6rem;
+  align-items: center;
+  margin: 4rem 8rem;
+}
+
+.apresentacao h1 {
+  margin-inline: auto;
+  font-size: 2.5rem;
+}
+.apresentacao p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #94a3b8;
+  width: 80%;
+}
+
+.foto-perfil {
+  border-radius: 50%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-inline: auto;
+  border: 4px solid #1e293b;
+}
