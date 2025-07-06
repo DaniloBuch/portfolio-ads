@@ -1,81 +1,88 @@
 <!DOCTYPE html>
+
 <html lang="pt-Br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Portfólio | Danilo Buch</title>
   </head>
+
   <body>
-    <header class="cabecalho">
-      <div class="logo">
-        <a href="#">Danilo_Buch.dev</a>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="/pages/sobre">Sobre Mim</a></li>
-          <li><a href="/pages/formacao">Formação</a></li>
-          <li><a href="/pages/portfolio">Portfolio</a></li>
-          <li><a href="/pages/contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="conteudo">
-      <div class="apresentacao">
-        <img
-          src="https://placehold.co/400x400/0a0a0a/ffffff?text=Danilo+Buch"
-          alt="Foto de perfil"
-          class="foto-perfil"
-        />
-        <div>
-          <h1 class="font-fira">
-            Meu nome é Danilo Buch.
-            <br />
-            Prazer em te conhecer!
-          </h1>
-
-          <p>
-            Minha jornada da análise comercial para o desenvolvimento full-stack
-            me deu uma perspectiva única para entender as necessidades do
-            negócio e traduzi-las em soluções técnicas eficientes e escaláveis.
-            Sou movido pela curiosidade e pela paixão de construir ferramentas
-            que realmente impactam a vida das pessoas.
-          </p>
+    <script>
+      // Função para alternar a classe 'aberto' no menu para versão 'mobile'
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("menu-aberto");
+      }
+    </script>
+    <div class="container">
+      <header class="cabecalho">
+        <div class="logo">
+          <a href="/">DaniloBuch.dev()</a>
         </div>
-      </div>
-      <h2>Desenvolvedor Web</h2>
 
-      <p>
-        Sou movido pela curiosidade e pela paixão de construir ferramentas que
-        realmente impactam a vida das pessoas.
-      </p>
+        <nav>
+          <button
+            class="menu-mobile-btn"
+            aria-label="Abrir ou fechar menu"
+            onclick="toggleMenu()"
+          >
+            <div class="menu-mobile-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <ul class="menu" id="menu">
+            <li><a href="/pages/sobre">Sobre Mim</a></li>
+            <li><a href="/pages/formacao">Formação</a></li>
+            <li><a href="/pages/portfolio">Portfólio</a></li>
+            <li><a href="/pages/contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <h3>Minhas Habilidades</h3>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Git e Github</li>
-    </main>
-    <footer>
-      <a
-        href="https://www.linkedin.com/in/danilo-buch-7063491b0/"
-        target="_blank"
-        >Linkedin</a
-      >
-      <a href="https://github.com/danilobuch" target="_blank">Github</a>
-      <a href="https://www.instagram.com/danilobuch/" target="_blank"
-        >Instagram</a
-      >
-      <a
-        href="https://www.facebook.com/danilo.buch
-        "
-        target="_blank"
-        >Facebook</a
-      >
-      <p>© 2025 Danilo Buch. Construído com café e curiosidade.</p>
-    </footer>
+      <main class="conteudo">
+        <section class="apresentacao">
+          <img
+            src="./images/foto-perfil.jpeg"
+            alt="Foto de perfil"
+            class="foto-perfil"
+          />
+
+          <div>
+            <h1>Meu nome é <strong>Danilo Buch.</strong></h1>
+
+            <h2>Desenvolvedor Web</h2>
+
+            <p>
+              Minha jornada da análise comercial para o desenvolvimento
+              full-stack me deu uma perspectiva única para entender as
+              necessidades do negócio e traduzi-las em soluções técnicas
+              eficientes e escaláveis. Sou movido pela curiosidade e pela paixão
+              de construir ferramentas que realmente impactam a vida das
+              pessoas.
+            </p>
+
+            <div class="botoes">
+              <a href="/pages/portfolio" class="botao">Veja meus projetos</a>
+
+              <a href="/pages/contato" class="botao">Entre em contato</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>© 2025 Danilo Buch. Construído com café e curiosidade.</p>
+      </footer>
+    </div>
   </body>
 </html>
