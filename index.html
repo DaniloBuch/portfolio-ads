@@ -16,13 +16,14 @@
 
   <body>
     <script>
-      // Função para alternar a classe 'aberto' no menu para versão 'mobile'
       function toggleMenu() {
         const menu = document.getElementById("menu");
+        const conteudo = document.getElementById("conteudo");
         menu.classList.toggle("menu-aberto");
+        conteudo.classList.toggle("conteudo-aberto");
       }
     </script>
-    <div class="container">
+    <div class="container" id="conteudo">
       <header class="cabecalho">
         <div class="logo">
           <a href="/">DaniloBuch.dev()</a>

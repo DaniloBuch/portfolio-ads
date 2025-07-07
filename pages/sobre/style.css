@@ -16,14 +16,16 @@ body {
 body {
   display: flex;
   font-family: "Montserrat", sans-serif;
-  background-color: #0a0a0a;
   color: #e2e8f0;
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 0
-  );
-  background-size: 20px 20px;
+  background-image: url("../../images/coding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: rgba(10, 10, 10, 0.9);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   height: 100vh;
 }
 
@@ -32,9 +34,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-.conteudo-aberto {
-  padding-top: 150px;
 }
 
 .cabecalho {
@@ -97,12 +96,16 @@ body {
   padding: 100px 2rem 2rem;
 }
 
+.conteudo-aberto {
+  padding-top: 150px;
+}
+
 .apresentacao {
   display: flex;
   text-align: left;
   gap: 6rem;
   align-items: center;
-  margin: 4rem 6rem;
+  margin: 2rem 4rem;
 }
 
 .apresentacao h1 {
@@ -123,12 +126,8 @@ body {
   font-weight: 500;
 }
 
-.foto-perfil {
-  border-radius: 50%;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  margin-inline: auto;
-  border: 4px solid #1f5868;
-  width: 420px;
+.apresentacao h3 {
+  font-weight: 500;
 }
 
 .botoes {
@@ -183,9 +182,10 @@ body {
 @media (max-width: 1024px) {
   .cabecalho {
     justify-content: space-around;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(5, 5, 5, 0.7);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    gap: 30%;
   }
 
   nav {
@@ -239,7 +239,7 @@ body {
     padding: 1rem;
     top: 54.5px;
     right: 0px;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(5, 5, 5, 0.7);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     border-radius: 8px;
@@ -264,14 +264,14 @@ body {
   .apresentacao {
     gap: 3rem;
     align-items: center;
-    margin: 2rem 3rem;
+    margin: 1.5rem 2rem;
   }
 
   .apresentacao h1 {
     font-size: 2rem;
   }
 
-  .foto-perfil {
+  .foto-sobre {
     width: 320px;
   }
 }

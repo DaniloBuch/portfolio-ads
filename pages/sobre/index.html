@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio | Danilo Buch</title>
+  </head>
+
+  <body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const conteudo = document.getElementById("conteudo");
+        menu.classList.toggle("menu-aberto");
+        conteudo.classList.toggle("conteudo-aberto");
+      }
+    </script>
+    <div class="container" id="conteudo">
+      <header class="cabecalho">
+        <div class="logo">
+          <a href="/">DaniloBuch.dev()</a>
+        </div>
+
+        <nav>
+          <button
+            class="menu-mobile-btn"
+            aria-label="Abrir ou fechar menu"
+            onclick="toggleMenu()"
+          >
+            <div class="menu-mobile-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <ul class="menu" id="menu">
+            <li>
+              <a href="/"><b>Início</b></a>
+            </li>
+            <li><a href="/pages/formacao">Formação</a></li>
+            <li><a href="/pages/portfolio">Portfólio</a></li>
+            <li><a href="/pages/contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="conteudo">
+        <section class="apresentacao">
+          <div>
+            <h1>Um pouco sobre mim.</h1>
+
+            <h2>Construindo Pontes entre Negócios e Código</h2>
+
+            <p>
+              Por mais de nove anos, meu universo foi moldado por dados,
+              planilhas e sistemas de gestão. Como Analista Comercial, ainda
+              hoje mergulho em oceanos de informações em sistemas como TOTVS e
+              SAP, com a missão de traduzir números complexos de SLAs e OTIF em
+              estratégias de negócio claras e acionáveis. O Excel avançado é meu
+              canivete suíço, a ferramenta com a qual esculpo clareza a partir
+              do caos.
+            </p>
+
+            <h3>A Virada de Chave: A Lógica por Trás dos Números</h3>
+
+            <p>
+              A mudança começou quando as fórmulas do Excel já não eram
+              suficientes. Comecei a escrever scripts e a usar lógica de
+              programação para automatizar tarefas e criar relatórios que iam
+              além do padrão. Foi uma revelação. Percebi que o que me fascinava
+              não era o dado em si, mas a lógica que o organizava, o algoritmo
+              que revelava um padrão oculto. Analogia: Sinto que por anos fui
+              como um cartógrafo que desenhava mapas detalhados à mão (análise
+              de dados). Ao descobrir a programação, percebi que eu poderia
+              construir o satélite que não só gera os mapas automaticamente, mas
+              que também prevê o tempo e descobre novos territórios
+              (desenvolvimento de soluções). O desejo de criar a ferramenta se
+              tornou maior do que apenas usá-la.
+            </p>
+
+            <h3>Do "Porquê" para o "Como": A Jornada Atual</h3>
+
+            <p>
+              Essa paixão está me guiando em uma transição de carreira
+              estruturada e focada. Enquanto sigo atuando como Analista, dedico
+              meu tempo e energia para me tornar um Desenvolvedor Full-Stack.
+              Hoje, meu ambiente de aprendizado e projetos é o Visual Studio
+              Code, e meu foco de estudo está no ecossistema JavaScript (React,
+              Next.js, Node.js) e Java (com Spring), sempre garantindo que a
+              fundação de dados seja sólida com SQL. Tenho um interesse especial
+              em Cibersegurança (WebSec), pois acredito que uma solução completa
+              deve ser, acima de tudo, segura. Minha bagagem de 9 anos não é
+              apenas um histórico profissional; é o alicerce para minha futura
+              carreira em tecnologia. Ela me capacita a fazer as perguntas
+              certas, a entender o impacto real de uma feature no dia a dia do
+              usuário e a enxergar além do código. Meu objetivo não é apenas
+              programar, mas resolver problemas de negócio de ponta a ponta.
+            </p>
+
+            <p>
+              Estou buscando ativamente minha primeira oportunidade como
+              Desenvolvedor. Quero encontrar uma equipe onde eu possa aplicar
+              essa combinação única de visão de negócio e novas habilidades
+              técnicas para agregar valor desde o primeiro dia.
+              <br />
+              <br />
+              <strong>
+                Explore meus projetos abaixo e vamos conversar sobre como posso
+                contribuir.
+              </strong>
+            </p>
+
+            <div class="botoes">
+              <a href="/pages/portfolio" class="botao">Veja meus projetos</a>
+
+              <a href="/pages/contato" class="botao">Entre em contato</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>© 2025 Danilo Buch. Construído com café e curiosidade.</p>
+      </footer>
+    </div>
+  </body>
+</html>
