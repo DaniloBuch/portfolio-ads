@@ -16,15 +16,32 @@ body {
 body {
   display: flex;
   font-family: "Montserrat", sans-serif;
-  background-color: #0a0a0a;
   color: #e2e8f0;
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 0
-  );
-  background-size: 20px 20px;
+  background-color: #0a0a0a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(
+      circle at 10% 30%,
+      rgba(78, 161, 255, 0.1),
+      transparent 50%
+    ),
+    radial-gradient(circle at 90% 70%, rgba(79, 146, 255, 0.1), transparent 50%);
 }
 
 .container {

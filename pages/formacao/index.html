@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio | Danilo Buch</title>
+  </head>
+
+  <body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const conteudo = document.getElementById("conteudo");
+        menu.classList.toggle("menu-aberto");
+        conteudo.classList.toggle("conteudo-aberto");
+      }
+    </script>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="/">DaniloBuch.dev()</a>
+      </div>
+
+      <nav>
+        <button
+          class="menu-mobile-btn"
+          aria-label="Abrir ou fechar menu"
+          onclick="toggleMenu()"
+        >
+          <div class="menu-mobile-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <ul class="menu" id="menu">
+          <li>
+            <a href="/"><b>Início</b></a>
+          </li>
+          <li><a href="/pages/sobre">Sobre</a></li>
+          <li><a href="/pages/portfolio">Portfólio</a></li>
+          <li><a href="/pages/contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container" id="conteudo">
+      <main class="conteudo">
+        <section class="apresentacao">
+          <div>
+            <h1>Formação & Desenvolvimento Contínuo</h1>
+            <h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="cor-svg"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c0 5 4 5 4 5h4s4 0 4-5v-5" />
+              </svg>
+              Formação Acadêmica
+            </h2>
+
+            <div class="formacao-container">
+              <div class="formacao-card">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p class="formacao-faculdade">Uninter</p>
+                <p>2025 - 2027 (Previsto)</p>
+                <p class="texto-formacao">
+                  Cursando graduação tecnológica com foco total em
+                  desenvolvimento de software, aprofundando em lógica,
+                  engenharia de software, banco de dados e arquitetura de
+                  sistemas.
+                </p>
+              </div>
+              <div class="formacao-card">
+                <h3>Bacharelado em Administração</h3>
+                <p class="formacao-faculdade">Fasb</p>
+                <p>2018 - 2022 (8 semestres cursados)</p>
+                <p class="texto-formacao">
+                  Base robusta em gestão, logística e estratégia de negócios,
+                  fundamental para desenvolver a visão analítica que hoje aplico
+                  para entender as dores do cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="apresentacao">
+          <div>
+            <h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="cor-svg"
+              >
+                <path
+                  d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                />
+                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                <path d="m10 13-2 2 2 2" />
+                <path d="m14 13 2 2-2 2" />
+              </svg>
+              Certificações e Formações em Tecnologia
+            </h2>
+
+            <div class="formacao-container tecnologias-container">
+              <div class="formacao-card">
+                <h3>+30 Certificados e 9 Formações Concluídas</h3>
+                <p class="formacao-faculdade">Formações Concluídas</p>
+
+                <li>Front-End Completo (HTML, CSS, JS)</li>
+                <li>Especialista em React (Hooks, JSX, Router)</li>
+                <li>Avançado em TypeScript</li>
+
+                <h3>Principais Tecnologias</h3>
+                <div class="tecnologias">
+                  <p>React</p>
+                  <p>TypeScript</p>
+                  <p>JavaScript</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>Git</p>
+                  <p>SQL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>© 2025 Danilo Buch. Construído com café e curiosidade.</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -104,10 +104,10 @@ body::before {
 .conteudo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
   margin: 2rem;
-  flex-grow: 1;
+  gap: 2rem;
   padding: 100px 2rem 2rem;
 }
 
@@ -116,16 +116,18 @@ body::before {
 }
 
 .apresentacao {
-  display: flex;
-  text-align: left;
-  gap: 6rem;
+  display: block;
+  gap: 2rem;
   align-items: center;
-  margin: 2rem 4rem;
+  margin: 0 4rem;
+  padding: 0 4rem;
+  text-align: justify;
+  width: 100%;
 }
 
 .apresentacao h1 {
   font-size: 2.5rem;
-  align-items: justify;
+  align-items: left;
 }
 
 .apresentacao p {
@@ -136,7 +138,7 @@ body::before {
 }
 
 .apresentacao h2 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -145,11 +147,67 @@ body::before {
   font-weight: 500;
 }
 
+.cor-svg {
+  color: #01c8ff;
+}
+
+.formacao-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tecnologias {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.formacao-card {
+  gap: 1rem;
+  border: 1px solid #64748b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: 0.3s;
+  width: 100%;
+  flex: 1;
+  background-color: rgba(0, 38, 48, 0.1);
+}
+
+.formacao-card .texto-formacao {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.formacao-card .formacao-faculdade {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #01c8ff;
+}
+
+.formacao-card:hover {
+  border: 1px solid #01c8ff;
+}
+
+.formacao-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .botoes {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 0rem;
 }
 
 .botao {
@@ -192,6 +250,17 @@ body::before {
 
 .menu-mobile-btn {
   display: none;
+}
+
+.tecnologias-container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tecnologias-container .formacao-faculdade {
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -270,8 +339,8 @@ body::before {
     margin: 1.5rem;
   }
 
-  .foto-perfil {
-    width: 300px;
+  .formacao-container {
+    flex-direction: column;
   }
 }
 
@@ -284,9 +353,5 @@ body::before {
 
   .apresentacao h1 {
     font-size: 2rem;
-  }
-
-  .foto-sobre {
-    width: 320px;
   }
 }
