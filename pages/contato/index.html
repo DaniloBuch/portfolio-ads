@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio | Danilo Buch</title>
+  </head>
+
+  <body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const conteudo = document.getElementById("conteudo");
+        menu.classList.toggle("menu-aberto");
+        conteudo.classList.toggle("conteudo-aberto");
+      }
+    </script>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="/">DaniloBuch.dev()</a>
+      </div>
+
+      <nav>
+        <button
+          class="menu-mobile-btn"
+          aria-label="Abrir ou fechar menu"
+          onclick="toggleMenu()"
+        >
+          <div class="menu-mobile-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <ul class="menu" id="menu">
+          <li>
+            <a href="/"><b>Início</b></a>
+          </li>
+          <li><a href="/pages/sobre">Sobre</a></li>
+          <li><a href="/pages/formacao">Formação</a></li>
+          <li><a href="/pages/portfolio">Portfólio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container" id="conteudo">
+      <main class="conteudo">
+        <section class="apresentacao">
+          <div>
+            <h1>Vamos Conversar</h1>
+            <p>
+              Estou buscando minha primeira oportunidade como desenvolvedor. Se
+              você tem um desafio, um contato ou uma vaga, adoraria ouvir sobre.
+            </p>
+            <h2>Contatos Diretos</h2>
+            <p>Para uma resposta mais rápida, me encontre aqui:</p>
+            <div class="contatos-container">
+              <a href="https://www.linkedin.com/in/danilobuch/">
+                <div class="contatos-card">
+                  <div class="descricao-contato">
+                    <h2>Linkedin</h2>
+                    <p class="texto-contato">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#01c8ff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        ></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                      danilobuch
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="https://github.com/DaniloBuch">
+                <div class="contatos-card">
+                  <div class="descricao-contato">
+                    <h2>GitHub</h2>
+                    <p class="texto-contato">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#000"
+                        stroke="#01c8ff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 19c-4.3 1.4 -4.3-2.5 -6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.5-.6 1.2-.5 2V22"
+                        ></path>
+                      </svg>
+                      danilobuch
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <br />
+            <h2>Contate-me</h2>
+            <div class="contatos-card">
+              <form id="formulario">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite seu nome..."
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu email..."
+                />
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="6"
+                  required
+                  placeholder="Digite sua mensagem..."
+                ></textarea>
+                <button type="submit" class="botao">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>© 2025 Danilo Buch. Construído com café e curiosidade.</p>
+      </footer>
+    </div>
+    <script>
+      const formulario = document.getElementById("formulario");
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value;
+        alert(`Obrigado pelo contato, ${nome}!`);
+        formulario.reset();
+      });
+    </script>
+  </body>
+</html>
