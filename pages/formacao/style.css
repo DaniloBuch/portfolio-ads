@@ -120,7 +120,7 @@ body::before {
   gap: 2rem;
   align-items: center;
   margin: 0 4rem;
-  padding: 0 4rem;
+  padding: 0 10rem;
   text-align: justify;
   width: 100%;
 }
@@ -349,6 +349,7 @@ body::before {
     gap: 3rem;
     align-items: center;
     margin: 1.5rem 2rem;
+    padding: 0 5rem;
   }
 
   .apresentacao h1 {
