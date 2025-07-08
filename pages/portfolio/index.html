@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio | Danilo Buch</title>
+  </head>
+
+  <body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const conteudo = document.getElementById("conteudo");
+        menu.classList.toggle("menu-aberto");
+        conteudo.classList.toggle("conteudo-aberto");
+      }
+    </script>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="/">DaniloBuch.dev()</a>
+      </div>
+
+      <nav>
+        <button
+          class="menu-mobile-btn"
+          aria-label="Abrir ou fechar menu"
+          onclick="toggleMenu()"
+        >
+          <div class="menu-mobile-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <ul class="menu" id="menu">
+          <li>
+            <a href="/"><b>Início</b></a>
+          </li>
+          <li><a href="/pages/sobre">Sobre</a></li>
+          <li><a href="/pages/portfolio">Portfólio</a></li>
+          <li><a href="/pages/contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container" id="conteudo">
+      <main class="conteudo">
+        <section class="apresentacao">
+          <div>
+            <h1>Meus Projetos</h1>
+            <p>
+              Aqui estão alguns projetos onde aplico minhas habilidades para
+              resolver problemas práticos, transformando dados e lógica de
+              negócio em aplicações funcionais.
+            </p>
+
+            <div class="projetos-container">
+              <div class="projetos-card">
+                <img src="/images/Meteora.png" alt="Prévia do projeto" />
+
+                <div class="descricao-projeto">
+                  <h2>Meteora</h2>
+                  <p class="texto-projeto">
+                    O Meteora é um e-commerce fictício de moda em constante
+                    desenvolvimento, nesta página foi implementado o sistema de
+                    'carrinho de compras'. Este projeto visa aprimorar as
+                    habilidades em <strong>React</strong>, e apresentar a
+                    <strong> Context API </strong>
+                    como uma solução para
+                    <strong>gerenciamento de estados globais</strong> de uma
+                    aplicação React.
+                  </p>
+                  <div class="botoes">
+                    <a
+                      href="https://alura-meteora-context-api-danilobuchs-projects.vercel.app/"
+                      class="botao"
+                      >Veja você mesmo!
+                    </a>
+                    <a
+                      href="https://github.com/DaniloBuch/Alura-Meteora-context-API"
+                      class="botao"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#01c8ff"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 19c-4.3 1.4 -4.3-2.5 -6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.5-.6 1.2-.5 2V22"
+                        ></path>
+                      </svg>
+                      GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="projetos-card">
+                <img src="/images/Freelando.png" alt="Prévia do projeto" />
+
+                <div class="descricao-projeto">
+                  <h2>Freelando</h2>
+                  <p class="texto-projeto">
+                    O "Freelando" é um projeto prático que simula a criação de
+                    uma aplicação web para o mercado de trabalho, nessa página
+                    simula o cadastro de um freelancer. O objetivo principal é
+                    consolidar as habilidades em <strong>React</strong>,
+                    abordando desde a componentização e navegação com
+                    <strong>React Router</strong>, até o gerenciamento de estado
+                    com a <strong>Context API</strong>.
+                  </p>
+                  <div class="botoes">
+                    <a href="https://freelando-pi.vercel.app/" class="botao"
+                      >Veja você mesmo!
+                    </a>
+                    <a
+                      href="https://github.com/DaniloBuch/freelando"
+                      class="botao"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#01c8ff"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 19c-4.3 1.4 -4.3-2.5 -6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.5-.6 1.2-.5 2V22"
+                        ></path>
+                      </svg>
+                      GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="projetos-card">
+                <img src="/images/Organo.png" alt="Prévia do projeto" />
+
+                <div class="descricao-projeto">
+                  <h2>Meteora</h2>
+                  <p class="texto-projeto">
+                    O "Organo" é um projeto prático que simula a criação de uma
+                    plataforma para organizar equipes de trabalho. Nesta página,
+                    é possível cadastrar novos colaboradores e distribuí-los em
+                    times. O objetivo principal é consolidar as habilidades em
+                    <strong>React</strong>, abordando desde a criação de
+                    <strong>componentes</strong> (como formulários, cards de
+                    colaborador e seções de times) até o
+                    <strong>gerenciamento de estado </strong>para manipular a
+                    lista de participantes de forma dinâmica.
+                  </p>
+                  <div class="botoes">
+                    <a
+                      href="https://alura-organo-danilobuchs-projects.vercel.app/"
+                      class="botao"
+                      >Veja você mesmo!
+                    </a>
+                    <a
+                      href="https://github.com/DaniloBuch/Alura-Organo"
+                      class="botao"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#01c8ff"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 19c-4.3 1.4 -4.3-2.5 -6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.5-.6 1.2-.5 2V22"
+                        ></path>
+                      </svg>
+                      GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <p>© 2025 Danilo Buch. Construído com café e curiosidade.</p>
+      </footer>
+    </div>
+  </body>
+</html>
